@@ -45,22 +45,20 @@ empty):
 Usage
 -----
 
-Install the package by copying tikzlibrarybayesnet.code.tex to your
-LaTeX system or copy the file into projects that are using it.  To use
-the library in your LaTeX file
+Install the package by moving this folder to your local LaTeX package
+folder.  This can be located with
 
-.. code-block:: python
+.. code-block:: sh
 
-   \usepackage{tikz}
-   \usetikzlibrary{bayesnet}
+    kpsewhich -var-value=TEXMFHOME
 
-Compile the LaTeX example:
+Then add 
 
-.. code-block:: none
+.. code-block:: latex
 
-   pdflatex example.tex
+   \usepackage{bayesnet}
 
-and see the resulting PDF file example.pdf.
+to your LaTeX source file and compile as usual.
 
 Example
 -------
