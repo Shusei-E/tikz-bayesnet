@@ -51,6 +51,7 @@ folder.  This can be located with
 .. code-block:: sh
 
     kpsewhich -var-value=TEXMFHOME
+    sudo mktexlsr (probably this)
 
 Then add 
 
